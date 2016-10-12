@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.cz-tek.com/Feature.html#six -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ClearInsight</title>
+    
+    <link href="https://www.cz-tek.com/favicon.ico" type="image/x-icon" rel="icon">
+    <link href="https://www.cz-tek.com/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="./ClearInsight_files/basic.min.css" rel="stylesheet">
+    <link href="./ClearInsight_files/share.min.css" rel="stylesheet">
+    <link href="./ClearInsight_files/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./ClearInsight_files/feature.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg"></div>
+<header class="header" id="header">
+    <ul class="nav">
+        <li><a href="https://www.cz-tek.com/index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+        <li><a class="active" href="https://www.cz-tek.com/Feature.html"><i class="fa fa-heart-o"></i><span>Features</span></a></li>
+        <li><a href="https://www.cz-tek.com/Use.html"><i class="fa fa-laptop"></i><span>Guidance</span></a></li>
+        <li><a href="https://www.cz-tek.com/Support.html"><i class="fa fa-lightbulb-o"></i><span>Services</span></a></li>
+
+        <li><a href="https://www.cz-tek.com/Download.html"><i class="fa fa-cloud-download"></i><span>Develop</span></a></li>
+        <li><a href="https://www.cz-tek.com/ContactUs.html"><i class="fa fa-phone"></i><span>Contact</span></a></li>
+    </ul>
+</header>
+<div class="wrap">
+    <h1 class="page-title">Features</h1>
+    <div class="content">
+        <div class="list" id="list">
+            <ul id="list-ul" style="position: relative;">
+                <li><a href="https://www.cz-tek.com/Feature.html#one">Customizable</a></li>
+                <li><a href="https://www.cz-tek.com/Feature.html#two">Illustrate</a></li>
+                <li><a href="https://www.cz-tek.com/Feature.html#three">Dynamic</a></li>
+                <li><a href="https://www.cz-tek.com/Feature.html#four">Monitor</a></li>
+                <li><a href="https://www.cz-tek.com/Feature.html#five">IPad</a></li>
+                <li><a href="https://www.cz-tek.com/Feature.html#six">Download</a></li>
+            </ul>
+        </div>
+        <div class="detail" id="detail">
+            <div class="item" id="one">
+                <div class="img" style="background: url(&quot;img/feature0.png&quot;) center center no-repeat;"></div>
+                <div class="words">
+                    <h5>Customizable KPI</h5>
+                    <p>Customization is a corner stone philosophy at ClearInsight. We can automatically
+                        provide some individual KPI’s, like KPI name, target but users can also define the KPIs.</p>
+                </div>
+            </div>
+            <div class="item" id="two">
+                <div class="img" style="background: url(&quot;img/feature1.png&quot;) center center no-repeat;"></div>
+                <div class="words">
+                    <h5>Illustrate organizational structure</h5>
+                    <p>Assigning KPI’s to relevant personnel,
+                        if multiple departments have the same KPI’s you can aggregate the data to analyse
+                        interdepartmental performance.</p>
+                </div>
+            </div>
+            <div class="item" id="three">
+                <div class="img" style="background: url(&quot;img/feature2.png&quot;) center center no-repeat;"></div>
+                <div class="words">
+                    <h5>Dynamic analysis</h5>
+                    <p>Analyse many KPIs at a time. Specifically, we enable our clients to overlay KPI’s
+                        in order to compare the performance of complimenting functions within the organisation.
+                        You can also see the discrepancy between the actual data with the target data.</p>
+                </div>
+            </div>
+            <div class="item" id="four">
+                <div class="img" style="background: url(&quot;img/feature3.png&quot;) center center no-repeat;"></div>
+                <div class="words">
+                    <h5>Dashboard monitor</h5>
+                    <p>Clear Insights provides you with a centralized KPI ecosystem perpetually accessible
+                        to colleagues in real time. Ultimately, this KPI ecosystem promotes the crucial collaboration element
+                        necessary to arrive at actionable insights..</p>
+                </div>
+            </div>
+            <div class="item" id="five">
+                <div class="img" style="background: url(&quot;img/feature4.png&quot;) center center no-repeat;"></div>
+                <div class="words">
+                    <h5>Ipad</h5>
+                    <p>Our iPad app keeps senior management to keep stay at the heart of the action. Specifically,
+                        the app enables our clientds to act proactively as opposed to reactively to key operational events
+                        such as employee productivity and right first time percentage.</p>
+                </div>
+            </div>
+            <div class="item" id="six">
+                <div class="img" style="background: url(&quot;img/feature5.png&quot;) center center no-repeat;"></div>
+                <div class="words">
+                    <h5>Download to different format</h5>
+                    <p>Dashboard can be downloaded onto excel 、word 、ppt or a picture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>BrillianTech</p>
+    <p><i class="fa fa-envelope-o"></i> <span>info@cz-tek.com</span></p>
+    <p><i class="fa fa-phone"></i> (8621)61623230</p>
+    <p>©2014 BrillianTech 沪ICP备13005925号-2</p>
+</div>
+<script async="" src="./ClearInsight_files/analytics.js.下载"></script><script>
+    window.onload=function(){
+        var target=document.getElementById("detail").getElementsByClassName("img");
+        for(var i=0;i<target.length;i++){
+           target[i].style.background="url(img/feature"+i+".png)no-repeat center center";
+        }
+    }
+    window.onscroll=function(){
+        var top=document.getElementById("list").getBoundingClientRect().top;
+        if(top<=0){
+            changePosition("fixed");
+        }
+        else{
+            changePosition("relative");
+        }
+    }
+    function changePosition(type){
+        var target=document.getElementById("list-ul");
+        if(type==="fixed"){
+            target.style.position="fixed";
+        }
+        else if(type==="relative"){
+            target.style.position="relative";
+        }
+    }
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48995139-1', 'clearinsightscience.com');
+    ga('send', 'pageview');
+
+</script>
+
+</body></html>
